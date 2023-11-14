@@ -1,0 +1,106 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image:url("../Resources/HeritageBg1.jpg");
+	background-position:center;
+	background-size: cover;
+}
+
+.row {
+	display: flex;
+	height: 88%;
+	align-items: center;
+	margin-left: 50px;
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+.col{
+	margin-top: 200px;
+}
+.topic {
+	color: #BDA963;
+	font-size: 100px;
+}
+
+p {
+	color: #EAE9E5;
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.card {
+	width: 150px;
+	height: 180px;
+	display: table-caption;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: url("../Resources/logo.jpg");
+	background-position: center;
+	transition: transform 0.5s;
+	text-decoration: none;
+}
+
+.card1 {
+	background-image: url("../Resources/Heritage/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card2 {
+	background-image: url("../Resources/Heritage (2)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card3 {
+	background-image: url("../Resources/Heritage (3)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card4 {
+	background-image: url("../Resources/Heritage (4)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card5 {
+	background-image: url("../Resources/Heritage (5)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card6 {
+	background-image: url("../Resources/Heritage (6)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.card7 {
+	background-image: url("../Resources/Heritage (7)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card8 {
+	background-image: url("../Resources/Heritage (8)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card9 {
+	background-image: url("../Resources/Heritage (9)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.card10 {
+	background-image: url("../Resources/Heritage (10)/thumbnail.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5 {
+	color: #000;
+}

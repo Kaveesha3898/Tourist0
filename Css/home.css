@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+}
+
+
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+    font-family: Comic Sans MS;
+}
+#chk1{
+    display: none;
+     
+     
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid lightgreen;
+    color: darkseagreen;
+    font-size: 24px;
+    
+}
+
+
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+  
+}
+.banner {
+  background-image: url(../Resources/01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner:before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+ 
+}
+.banner-text-item{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banner-heading {
+  flex: 5;
+}
+.banner-heading h1 {
+  font-size: 150px;
+  font-weight: inherit;
+  color: #C0C038;
+  font-family: Satisfy;
+}
+.banner-text-item .form {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  width: 70%;
+  padding: 1% 2%;
+}
+.banner-text-item input,
+.banner-text-item .date,
+.banner-text-item .book {
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: Roboto;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+.banner-text-item input {
+  width: 50%;
+  flex: 2;
+}
+.banner-text-item .date {
+  width: 20%;
+  flex: 1;
+}
+.banner-text-item .book {
+  width: 20%;
+  flex: 1;
+}
+.banner-text-item .book {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #fde02f;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Barlow Condensed";
+  width: 20%;
+
